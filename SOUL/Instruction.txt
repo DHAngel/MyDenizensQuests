@@ -25,6 +25,7 @@
           - CHAT "Ahh good, it is time to choose your Path"
           - CHAT "What path will you go? Rogue, Healer, Warrior, or Caster?"
           - Zap
+          - HINT short
         Chat Trigger:
           '1':
             Trigger: /Rogue/
