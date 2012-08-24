@@ -25,6 +25,34 @@
           - CHAT "Ahh good, it is time to choose your Path"
           - CHAT "What path will you go? Rogue, Healer, Warrior, or Caster?"
           - Zap
-        
+        Chat Trigger:
+          '1':
+            Trigger: /Rogue/
+            Script:
+            - CHAT "Then you have made your choice. Please speak to Dante for more instruction"
+            - NARRATE "To choose Rogue type /hero choose Rogue"
+            - PERMISS Heroes.choose.ROUGE
+            - FINISH
+          '2':
+            Trigger: /Warrior/
+            Script:
+            - CHAT "Then you have made your choice. Please speak to Visco for more instruction.
+            - NARRATE "To choose Rogue type /hero choose Warrior"
+            - PERMISS Heroes.choose.WARRIOR
+            - FINISH
+          '3':
+            Trigger: /Healer/
+              Script:
+              - CHAT "Then you have made your choice. Please speak to Gen for more instruction.
+              - NARRATE "To choose Rogue type /hero choose Healer"
+              - PERMISS Heroes.choose.Healer
+              - FINISH
+          '4':
+            Trigger: /Caster/
+              Script:
+              - CHAT "Then you have made your choice. Please speak to Fenbar for more instruction.
+              - NARRATE "To choose Rogue type /hero choose Caster"
+              - PERMISS Heroes.choose.Caster
+              - FINISH
           
   
