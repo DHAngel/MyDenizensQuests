@@ -1,0 +1,19 @@
+'A Warm Welcome'
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - -FINISHED 'A Warm Welcome'
+  Steps:
+    1:
+      Proximity Trigger:
+        Script:
+        - CHAT "I have been expecting you <PLAYER>"
+        - EMOTE "bows."
+        - WAIT 1
+        - CHAT "We have much to talk about."
+        - NARRATE "To Talk to <NPC> again, right click him."
+        - ZAP
+    2:
+      Click Trigger:
+        Script:
