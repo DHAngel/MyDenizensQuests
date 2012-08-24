@@ -13,7 +13,7 @@
         - CHAT "Aha! Finally you came to see me <Player>"
         - CHAT "I am Visco! The Warrior trainer."
         - WAIT 1
-        - EMOTE "is howing off his biceps"
+        - EMOTE "is showing off his biceps"
         - CHAT "As a Warrior we use our sheer strength and our swords to overpower our opponenets."
         - LOOK RIGHT
         - EMOTE "kisses his right bicep"
