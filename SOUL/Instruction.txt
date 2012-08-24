@@ -1,0 +1,30 @@
+'Instruction':
+  Requirements:
+    Mode: All
+    List:
+    - FINISHED 'Speak to Gen'
+    - FINISHED 'Speak to Visco'
+    - FINISHED 'Speak to Dante'
+    - FINISHED 'Speak to Fenbar'
+  Steps:
+    1:
+      Proximity Trigger:
+        Script:
+        - NARRATE "You have spoken to the Instructors, speak to <NPC> by right clicking him."
+        - ZAP Duration: 10
+    2:
+      Click Trigger:
+        Script:
+        - CHAT "So you have spoken to the instructors yes?
+        - HINT short
+      Chat Trigger:
+        '1':
+          Trigger: /Yes/ I have spoken to them.
+          Script:
+          - ENGAGE
+          - CHAT "Ahh good, it is time to choose your Path"
+          - CHAT "What path will you go? Rogue, Healer, Warrior, or Caster?"
+          - Zap
+        
+          
+  
