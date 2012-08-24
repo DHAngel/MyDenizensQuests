@@ -12,8 +12,20 @@
         - EMOTE "bows."
         - WAIT 1
         - CHAT "We have much to talk about."
-        - NARRATE "To Talk to <NPC> again, right click him."
-        - ZAP
+        - NARRATE "To talk to <NPC> again, right click him."
+        - ZAP DURATION: 30
     2:
       Click Trigger:
         Script:
+        - CHAT "Thank you for speaking to me."
+        - WAIT 1
+        - CHAT "Welcome to the World of <World>"
+        - CHAT "In order to survive in <World> you must find your path."
+        - WAIT 1
+        - CHAT "The Paths are: Caster, Healer, Warrior and Rogue."
+        - Wait 1
+        - CHAT "To find your path you must speak with the four instructors"
+        - CHAT "Gen is the Healer, Visco is the Warrior, Dante is the Rogue and Fenbar is the Caster."
+        - Wait 1
+        - CHAT "Please speak to the four instructors then return to me with your decision."
+        - FINISH
