@@ -8,7 +8,7 @@
     1:
       Click Trigger:
         Script:
-        - CHAT "Ahh Hello young soul. Care to hear about the path of the Caster?"
+        - CHAT "Ahh Hello young soul. I am Fenbar, care to hear about the path of the Caster?"
         - WAIT 1
         - CHAT "Goooood, good. Casters are able to cast powerful magical spells in order to obliterate their opponent."
         - CHAT "We use MANA in order to conjure our spells, running out of mana in battle can be fatal!"
@@ -17,4 +17,4 @@
         - CHAT "That is all I can tell you unless you become my student."
         - WAIT 1
         - NARRATE "You have spoken to Fenbar."
-        - FINISHED
+        - FINISH
