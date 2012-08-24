@@ -1,4 +1,4 @@
-'A Warm Welcome'
+'A Warm Welcome':
   Type: Interact
   Requirements:
     Mode: All
