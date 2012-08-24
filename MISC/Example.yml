@@ -1,0 +1,47 @@
+'Clear my Home':
+  Requirements:
+    Mode: All
+    List:
+    - TIME NIGHT
+  Steps:
+    1:
+      Proximity Trigger:
+        Script:
+        - NARRATE "A man is nervously waiting outside a dark house."
+        - NARRATE "He looks like he needs help, maybe you should speak to him?"
+        - ZAP Duration: 30
+    2:
+      Click Trigger:
+        Script:
+        - CHAT "Oh goodness someone is here!"
+        - CHAT "I need your help!"
+        - WAIT 1
+        - CHAT "My house is invaded by Skeletons!"
+        - CHAT "Can you clear them for me please?"
+        - HINT short
+      Chat Trigger:
+        1:
+          Trigger: /Yes/ I will help you.
+          Script:
+          - CHAT "Thank you! Thank you!"
+          - CHAT "I'll unlock the door. Please clear them for me!"
+          - EXECUTE ASPLAYER 'ma join house1'
+          - WAIT 1
+          - ZAP
+        2:
+          Trigger: /No/ You'll have to find someone else.
+          Script:
+          - CHAT "Oh... Alright, maybe someone else will help?"
+          - FAIL
+    3:
+      Proximity Trigger:
+        Script:
+        - ENGAGE
+        - ^COOLDOWN 3600
+        - LOOK CLOSE Duration: 10
+        - CHAT "Thank you! Thank you! I can finally enter my house again."
+        - WAIT 1
+        - TAKE BONE
+        - GIVE MONEY QTY: 50
+        - GIVE HEROESEXP QTY: 100
+        - FINISH
