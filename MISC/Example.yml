@@ -1,48 +1,49 @@
 'Clear my Home':
-  Type: Interact
+  Type: Interact        #Tells that this Script is the Player interacting.
   Requirements:
-    Mode: All
-    List:
-    - TIME NIGHT
+    Mode: All           #Tells that all of the items in List: are needed.
+    List: 
+    - TIME NIGHT             #Says that the time has to be Night.
   Steps:
-    1:
-      Proximity Trigger:
-        Script:
-        - NARRATE "A man is nervously waiting outside a dark house."
+    1:                          #First Step
+      Proximity Trigger:        #If a Player is near the NPC this triggers
+        Script:         #What the NPC does.
+        - NARRATE "A man is nervously waiting outside a dark house."   #Says in chat without the npc name.
         - NARRATE "He looks like he needs help, maybe you should speak to him?"
-        - ZAP Duration: 30
+        - ZAP Duration: 30 #Moves to the next step for 30 seconds.
     2:
-      Click Trigger:
+      Click Trigger:            #Right clicking activates this trigger if the previous step is completed.
         Script:
-        - CHAT "Oh goodness someone is here!"
+        - CHAT "Oh goodness someone is here!"       #Makes the NPC say something
         - CHAT "I need your help!"
-        - WAIT 1
+        - WAIT 1                                    #Waits for 1 second.
         - CHAT "My house is invaded by Skeletons!"
         - CHAT "Can you clear them for me please?"
-        - HINT short
+        - HINT short     #Hint tells the player all options in a CHAT TRIGGER, short tells just the option, not the entire sentance.
       Chat Trigger:
-        1:
-          Trigger: /Yes/ I will help you.
+        1:          #First option
+          Trigger: /Yes/.           #What triggers this script.
           Script:
           - CHAT "Thank you! Thank you!"
           - CHAT "I'll unlock the door. Please clear them for me!"
-          - EXECUTE ASPLAYER 'ma join house1'
+          - EXECUTE ASPLAYER 'ma join house1'         #Executes a command, ASPLAYER makes it execute AS the PLAYER, ma join house1 is the command executed.
           - WAIT 1
           - ZAP
-        2:
-          Trigger: /No/ You'll have to find someone else.
+        2:          #Second Option
+          Trigger: /No/.
           Script:
           - CHAT "Oh... Alright, maybe someone else will help?"
-          - FAIL
+          - FAIL          #Fails the quest
     3:
       Proximity Trigger:
         Script:
-        - ENGAGE
-        - ^COOLDOWN 72000
-        - LOOK CLOSE Duration: 10
+        - ENGAGE          #Stops all other interaction with this NPC
+        - ^COOLDOWN 72000           #^ removes the .5 second delay between commands, COOLDOWN 72000 means there is a 20 Cooldown for the rewards.
+        - LOOK CLOSE Duration: 10         #Looks at the Player for 10 seconds.
         - CHAT "Thank you! Thank you! I can finally enter my house again."
         - WAIT 1
-        - TAKE BONE
-        - GIVE MONEY QTY: 50
-        - GIVE HEROESEXP QTY: 100
-        - FINISH
+        - TAKE BONE         #Takes a Bone from the player's inventory.
+        - GIVE MONEY QTY: 50          #Gives 50 coins
+        - GIVE HEROESEXP QTY: 100         #Gives 100 HEROES EXP
+        - DISENGAGE           #Allows other interaction with the npc
+        - FINISH          #Finishes the quest.
