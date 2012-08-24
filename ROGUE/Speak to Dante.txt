@@ -1,4 +1,5 @@
 'Speak to Dante':
+  Type: Interact
   Requirements:
     Mode: All
     List:

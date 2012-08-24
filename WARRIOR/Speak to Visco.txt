@@ -1,4 +1,5 @@
 'Speak to Visco':
+  Type: Interact
   Requirements:
     Mode: All
     List:

@@ -1,4 +1,5 @@
 'Clear my Home':
+  Type: Interact
   Requirements:
     Mode: All
     List:

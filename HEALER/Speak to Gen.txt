@@ -1,4 +1,5 @@
 'Speak to Gen':
+  Type: Interact
   Requirements:
     Mode: All
     List:

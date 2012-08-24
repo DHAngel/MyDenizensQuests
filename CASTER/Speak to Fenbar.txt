@@ -1,4 +1,5 @@
 'Speak to Fenbar':
+  Type: Interact
   Requirements:
     Mode: All
     List:

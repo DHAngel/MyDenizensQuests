@@ -1,4 +1,5 @@
 'Instruction':
+  Type: Interact
   Requirements:
     Mode: All
     List:
