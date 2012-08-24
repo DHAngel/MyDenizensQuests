@@ -38,7 +38,7 @@
       Proximity Trigger:
         Script:
         - ENGAGE
-        - ^COOLDOWN 3600
+        - ^COOLDOWN 72000
         - LOOK CLOSE Duration: 10
         - CHAT "Thank you! Thank you! I can finally enter my house again."
         - WAIT 1
