@@ -56,5 +56,6 @@
         Script:
         - CHAT "You're first task is to help Guard Derick find his lost Brother."
         - CHAT "Go speak to him, he is at" #Whatever location he is at
+        - FINISH
 
         
