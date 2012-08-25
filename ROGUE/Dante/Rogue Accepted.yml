@@ -1,0 +1,21 @@
+'Rogue Accepted':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - -FINISHED 'Rogue Accepted'
+    #Rogue Perm is here
+  Steps:
+    1:
+      Proximity Trigger:
+        Script:
+        - CHAT "Aahh, you followed my... advice?"
+        - CHAT "Goood... Goood..."
+        - NARRATE "To Speak with this NPC again, Right click him"
+    2:
+      Click Trigger:
+        Script:
+        - CHAT "Why don't you go help Guard Derick find his Brother?"
+        - CHAT "I'll attend to... other, matters while your away."
+        - FINISH
+      

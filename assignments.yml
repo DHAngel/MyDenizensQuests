@@ -9,7 +9,8 @@ Deniziens:
     - 20 Warrior Accepted
   'Dante':
     Interact Scripts:
-    - 10 Speak to Dante'
+    - 10 Speak to Dante
+    - 20 Rogue Accepted
   'Gen':
     Interact Scripts:
     - 10 Speak to Gen
