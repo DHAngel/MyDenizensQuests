@@ -1,0 +1,25 @@
+'Speak to Fenbar':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - FINISHED 'A Warm Welcome'
+    - -FINISHED 'Speak to Fenbar'
+  Steps:
+    1:
+      Click Trigger:
+        Script:
+        - CHAT "Ahh Hello young soul. I am Fenbar, care to hear about the path of the Caster?"
+        - WAIT 1
+        - CHAT "Goooood, good. Casters are able to cast powerful magical spells in order to obliterate their opponent."
+        - CHAT "We use MANA in order to conjure our spells, running out of mana in battle can be fatal!"
+        - WAIT 1
+        - CHAT "Our Specilizations are Wizard, Beguiler, Necromancer and Geomancer"
+        - CHAT "Beguilers are illusionists, Necromancers use dark magic and raise the dead.
+        - WAIT 1
+        - CHAT "Geomancers control the earth around them, they use earth magic to eliminate their enemies."
+        - CHAT "Wizards conjure extremely powerful magic at the cost of a large amount of mana"
+        - WAIT 1
+        - CHAT "Now go, you have much to do, and not enough time to be diddle daddling around here"
+        - NARRATE "You have spoken to Fenbar."
+        - FINISH

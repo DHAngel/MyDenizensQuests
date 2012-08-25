@@ -1,0 +1,37 @@
+'Speak to Dante':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - FINISHED 'A Warm Welcome'
+    - -FINISHED 'Speak to Dante'
+  Steps:
+    1:
+      Click Trigger:
+        Script:
+        - EMOTE "A shady man is standing in the shadows"
+        - WHISPER "Hello..."
+        - CHAT "I am Dante, the rogue instructor."
+        - WAIT 1
+        - CHAT "Lets have a little... chat.. about the Rogue shall we?"
+        - EMOTE "chuckles."
+        - WAIT 1
+        - CHAT "As a rogue. You use your stealth to your advantage."
+        - CHAT "You don't even notice I have my blade at your side?"
+        - WAIT 1
+        - CHAT "That is what it's like to be a Rogue..."
+        - CHAT "Rogue like other paths have specilizations, Ninja, Ranger, Thief, and Bard.
+        - WAIT 1
+        - CHAT "Ranger utilizes their bow much more than the other Rogues."
+        - CHAT "The Bard sings songs and tales to boost their allies in combat."
+        - WAIT 1
+        - CHAT "The Thief steals items from unknowing travelers, whom only find out they have no cash when they need it."
+        - CHAT "The Ninja uses stealth more than the other rogues in order to kill their opponents."
+        - WAIT 1
+        - CHAT "I'd tell you more, but in that case, I'd have to kill you."
+        - EMOTE "removes his blade from near your side."
+        - WAIT 1
+        - CHAT "If you become a Rogue, you can come talk to me again. Until then... <Player>"
+        - NARRATE "You have spoken to Dante"
+        - FINISH
+        

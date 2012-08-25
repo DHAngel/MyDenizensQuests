@@ -1,0 +1,22 @@
+'Warrior Accepted':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - -FINISHED 'Warrior Accepted'
+    # WARRIOR PERMISSION HERE
+  Steps:
+    1:
+      Proximity Trigger:
+        Script:
+        - CHAT "Ahhh <Player>, come here we will talk."
+        - CHAT "So I see you are a Warrior, yes?"
+        - WAIT 1
+        - CHAT "Let's go kick some ass!"
+        - EMOTE "laughs."
+        - NARRATE "To talk to Visco again Right click him"
+    2:
+      Click Trigger:
+        Script:
+        - CHAT "You're first task is to help Guard Derick find his lost Brother."
+        - CHAT "Go speak to him, he is at" #Whatever location he is at

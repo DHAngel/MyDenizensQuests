@@ -1,0 +1,27 @@
+'Speak to Gen':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - FINISHED 'A Warm Welcome'
+    - -FINISHED 'Speak to Gen'
+  Steps:
+    1:
+      Click Trigger:
+        Script:
+        - Emote "smiles."
+        - CHAT "Hello <Player>, it is nice to see you."
+        - CHAT "I am Gen, the Healer trainer"
+        - WAIT 1
+        - CHAT "I am assuming you have come to hear about the Healer."
+        - CHAT "As Healers it is our job to protect our Allies on the field by healing their health up"
+        - CHAT "allowing them to continue in battle".
+        - WAIT 1
+        - CHAT "Our specilizations are Druid, Cleric, Bloodmage, and Disciple"
+        - CHAT "Disciple is more of a battle healer than a healer like the others."
+        - CHAT "Bloodmage uses their own HP to heal their allies."
+        - CHAT "I'd love to tell you move, but... you need to get going!"
+        - NARRATE "You have spoken to Gen"
+        - FINISH
+      
+        
