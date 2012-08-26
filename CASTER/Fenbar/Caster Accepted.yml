@@ -1,0 +1,13 @@
+'Caster Accepted':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - -FINISHED 'Caster Accepted'
+    #Placeholder for TASK
+  Steps:
+    1:
+      Proximity Trigger:
+        Script:
+        - CHAT "We meet again <Player>, I see you are a Caster now I assume."
+        - CHAT "

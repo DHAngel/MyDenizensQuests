@@ -32,8 +32,8 @@
         - CHAT "I'd tell you more, but in that case, I'd have to kill you."
         - EMOTE "removes his blade from near your side."
         - WAIT 1
-        - CHAT "If you become a Rogue, you can come talk to me again. Until then... <Player>"
+        - CHAT "If you become a Rogue, you can come talk to me again. Until then... <PLAYER>"
         - NARRATE "You have spoken to Dante"
-        
+        - FINISH
         - DISENGAGE
         

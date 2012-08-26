@@ -4,7 +4,7 @@
     Mode: All
     List:
     - -FINISHED 'Rogue Accepted'
-    #Rogue Perm is here
+    - FLAGGED Rogue
   Steps:
     1:
       Proximity Trigger:
