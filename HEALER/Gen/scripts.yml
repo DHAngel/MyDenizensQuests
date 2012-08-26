@@ -23,5 +23,30 @@
         - CHAT "I'd love to tell you move, but... you need to get going!"
         - NARRATE "You have spoken to Gen"
         - FINISH
-      
-        
+
+'Healer Accepted':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - -FINISHED 'Healer Accepted'
+    #Healer Perm here
+  Steps:
+    1:
+      Proximity Trigger:
+        Script:
+        - EMOTE "smiles."
+        - CHAT "Hello again <Player>! Glad to see you again!"
+        - NARRATE "To Talk to this NPC again, Right click her."
+        - ZAP Duration: 20
+    2:
+      Click Trigger:
+        Script:
+        - ENGAGE
+        - CHAT "Alright, do you mind taking these supplies to (Insert Place)?"
+        - CHAT "Thanks hun, (Insert Place) is in dire need of splints."
+        - CHAT "My sister Jenna takes care of the supplies, give these to her."
+        - GIVE PAPER QTY: 5
+        - GIVE STICK QTY: 10
+        - FINISH
+        - DISENGAGE
