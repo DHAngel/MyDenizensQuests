@@ -1,0 +1,47 @@
+'Instruction':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - FINISHED Speak to Gen
+    - FINISHED Speak to Visco
+    - FINISHED Speak to Dante
+    - FINISHED Speak to Fenbar
+    - -FINISHED Instruction
+  Steps:
+    1:
+      Proximity Trigger:
+        Script:
+        - NARRATE "You have spoken to the Instructors. Please speak to Monk Drea by Right Clicking Him"
+        - ZAP
+    2:
+      Click Trigger:
+        Script:
+        - CHAT "Welcome back <PLAYER>, I've heard you have spoken to the four instructors."
+        - CHAT "Now that you have spoken to them, what PATH shall you choose?"
+        - HINT
+        - ZAP
+    3:
+      Chat Trigger:
+        1:
+          Trigger: /Warrior/
+          Script:
+          - ENGAGE
+          - CHAT "A Warrior eh, you like to swing swords?"
+          - CHAT "You have chosen Warrior, please speak to Visco for training."
+          - EXECUTE ASSERVER 'hero admin class <PLAYER> Warrior'
+          - FLAG Warrior
+          - FINISH
+          - DISENGAGE
+        2:
+          Trigger: /Rogue/
+          Script:
+          - ENGAGE
+          - CHAT "I didn't take you for the sneaky type..."
+          - CHAT "Speak to Dante for furthor instruction."
+          - EXECUTE ASSERVER 'hero admin class <PLAYER> Rogue'
+          - RESET FLAGGED PATH
+          - FLAG Rogue
+          - FINISH
+          - DISENGAGE
+      

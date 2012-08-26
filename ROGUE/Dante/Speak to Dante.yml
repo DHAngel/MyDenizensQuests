@@ -3,12 +3,13 @@
   Requirements:
     Mode: All
     List:
-    - FINISHED 'A Warm Welcome'
-    - -FINISHED 'Speak to Dante'
+    - FINISHED A Warm Welcome
+    - -FINISHED Speak to Dante
   Steps:
     1:
       Click Trigger:
         Script:
+        - ENGAGE
         - EMOTE "A shady man is standing in the shadows"
         - WHISPER "Hello..."
         - CHAT "I am Dante, the rogue instructor."
@@ -33,5 +34,6 @@
         - WAIT 1
         - CHAT "If you become a Rogue, you can come talk to me again. Until then... <Player>"
         - NARRATE "You have spoken to Dante"
-        - FINISH
+        
+        - DISENGAGE
         

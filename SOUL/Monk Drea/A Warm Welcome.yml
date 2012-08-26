@@ -3,7 +3,7 @@
   Requirements:
     Mode: All
     List:
-    - -FINISHED 'A Warm Welcome'
+    - -FINISHED A Warm Welcome
   Steps:
     1:
       Proximity Trigger:
@@ -13,14 +13,15 @@
         - WAIT 1
         - CHAT "We have much to talk about."
         - NARRATE "To talk to <NPC> again, right click him."
-        - ZAP DURATION: 30
+        - ZAP
     2:
       Click Trigger:
         Script:
+        - ENGAGE
         - CHAT "Thank you for speaking to me."
         - WAIT 1
-        - CHAT "Welcome to the World of <World>"
-        - CHAT "In order to survive in <World> you must find your path."
+        - CHAT "Welcome to the World of <WORLD>"
+        - CHAT "In order to survive in <WORLD> you must find your path."
         - WAIT 1
         - CHAT "The Paths are: Caster, Healer, Warrior and Rogue."
         - Wait 1
@@ -29,3 +30,4 @@
         - Wait 1
         - CHAT "Please speak to the four instructors then return to me with your decision."
         - FINISH
+        - DISENGAGE

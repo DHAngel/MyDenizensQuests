@@ -3,14 +3,15 @@
   Requirements:
     Mode: All
     List:
-    - FINISHED 'A Warm Welcome'
-    - -FINISHED 'Speak to Visco'
+    - FINISHED A Warm Welcome
+    - -FINISHED Speak to Visco
   Steps:
     1:
       Click Trigger:
         Script:
+        - ENGAGE
         - EMOTE "is flexing his muscles."
-        - CHAT "Aha! Finally you came to see me <Player>"
+        - CHAT "Aha! Finally you came to see me <PLAYER>"
         - CHAT "I am Visco! The Warrior trainer."
         - WAIT 1
         - EMOTE "is showing off his biceps"
@@ -19,7 +20,7 @@
         - EMOTE "kisses his right bicep"
         - LOOK AT
         - WAIT 1
-        - CHAT "Anyways <Player>, we have four specilizations, Paladin, Dreadknight, Dragoon and Samurai."
+        - CHAT "Anyways <PLAYER>, we have four specilizations, Paladin, Dreadknight, Dragoon and Samurai."
         - CHAT "Paladins are warriors of Light, they can heal their allies and have a lot of health"
         - WAIT 1
         - CHAT "Dreadknights are the opposites of Paladins, they use powerful dark attacks to slay their enemy."
@@ -31,6 +32,8 @@
         - LOOK LEFT
         - EMOTE "Kisses his left bicep."
         - WAIT 1
+        - FINISH
         - NARRATE "You take this as a time to leave."
         - NARRATE "You have spoken with Visco."
+        - DISENGAGE
         

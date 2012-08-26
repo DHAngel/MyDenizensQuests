@@ -9,6 +9,7 @@
     1:
       Click Trigger:
         Script:
+        - ENGAGE
         - Emote "smiles."
         - CHAT "Hello <Player>, it is nice to see you."
         - CHAT "I am Gen, the Healer trainer"
@@ -22,6 +23,8 @@
         - CHAT "Bloodmage uses their own HP to heal their allies."
         - CHAT "I'd love to tell you move, but... you need to get going!"
         - NARRATE "You have spoken to Gen"
+        - ZAP
+        - DISENGAGE
         - FINISH
       
         

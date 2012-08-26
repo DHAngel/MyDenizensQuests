@@ -3,8 +3,8 @@
   Requirements:
     Mode: All
     List:
-    - FINISHED 'A Warm Welcome'
-    - -FINISHED 'Speak to Fenbar'
+    - FINISHED A Warm Welcome
+    - -FINISHED Speak to Fenbar
   Steps:
     1:
       Click Trigger:
@@ -15,7 +15,7 @@
         - CHAT "We use MANA in order to conjure our spells, running out of mana in battle can be fatal!"
         - WAIT 1
         - CHAT "Our Specilizations are Wizard, Beguiler, Necromancer and Geomancer"
-        - CHAT "Beguilers are illusionists, Necromancers use dark magic and raise the dead.
+        - CHAT "Beguilers are illusionists, Necromancers use dark magic and raise the dead."
         - WAIT 1
         - CHAT "Geomancers control the earth around them, they use earth magic to eliminate their enemies."
         - CHAT "Wizards conjure extremely powerful magic at the cost of a large amount of mana"

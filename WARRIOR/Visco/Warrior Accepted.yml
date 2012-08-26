@@ -3,13 +3,13 @@
   Requirements:
     Mode: All
     List:
-    - -FINISHED 'Warrior Accepted'
-    # WARRIOR PERMISSION HERE
+    - -FINISHED Warrior Accepted
+    - FLAGGED Warrior
   Steps:
     1:
       Proximity Trigger:
         Script:
-        - CHAT "Ahhh <Player>, come here we will talk."
+        - CHAT "Ahhh <PLAYER>, come here we will talk."
         - CHAT "So I see you are a Warrior, yes?"
         - WAIT 1
         - CHAT "Let's go kick some ass!"
