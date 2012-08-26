@@ -23,3 +23,17 @@
         - CHAT "Now go, you have much to do, and not enough time to be diddle daddling around here"
         - NARRATE "You have spoken to Fenbar."
         - FINISH
+
+'Caster Accepted':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - -FINISHED 'Caster Accepted'
+    #Placeholder for TASK
+  Steps:
+    1:
+      Proximity Trigger:
+        Script:
+        - CHAT "We meet again <Player>, I see you are a Caster now I assume."
+        - CHAT "

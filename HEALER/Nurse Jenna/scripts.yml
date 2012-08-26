@@ -1,0 +1,23 @@
+'Supplies for the Hospital':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - -FINISHED 'Supploes for the Hospital'
+    - FINISHED 'Healer Accepted'
+    - ITEM PAPER 5
+    - ITEM STICK 10
+  Steps:
+    1:
+      Proximity Trigger:
+        Script:
+        - ENGAGE
+        - CHAT "Hello I'm Jenna! You must be <Player>, my sister Gen told me a lot about you."
+        - CHAT "Thank you for the supplies, but we only need 4 bandages and 8 sticks, keep the rest."
+        - CHAT "Who knows, maybe you'll find a use for it?"
+        - EMOTE "smiles."
+        - TAKE PAPER QTY: 4
+        - TAKE STICK QTY: 8
+        - GIVE HEROESEXP QTY: 46
+        - DISENGAGE
+        - FINISH

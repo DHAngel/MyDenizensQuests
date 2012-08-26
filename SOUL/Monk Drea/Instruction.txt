@@ -32,29 +32,37 @@
             Trigger: /Rogue/
             Script:
             - CHAT "Then you have made your choice. Please speak to Dante for more instruction"
-            - NARRATE "To choose Rogue type /hero choose Rogue"
-            - PERMISS Heroes.choose.ROUGE
+            - EXECUTE ASSERVER 'hero admin class <player> ROGUE'
+            - NARRATE "To choose a class later, type /hero choose classname"
+            - NARRATE "An example would be /hero choose Healer"
+            - FLAG ROGUE
             - FINISH
           '2':
             Trigger: /Warrior/
             Script:
             - CHAT "Then you have made your choice. Please speak to Visco for more instruction.
-            - NARRATE "To choose Rogue type /hero choose Warrior"
-            - PERMISS Heroes.choose.WARRIOR
+            - EXECUTE ASSERVER 'hero admin class <player> Warrior'
+            - NARRATE "To choose a class later, type /hero choose classname"
+            - NARRATE "An example would be /hero choose Healer"
+            - FLAG Warrior
             - FINISH
           '3':
             Trigger: /Healer/
               Script:
               - CHAT "Then you have made your choice. Please speak to Gen for more instruction.
-              - NARRATE "To choose Rogue type /hero choose Healer"
-              - PERMISS Heroes.choose.Healer
+              - EXECUTE ASSERVER 'hero admin class <player> Healer'
+              - NARRATE "To choose a class later, type /hero choose classname"
+              - NARRATE "An example would be /hero choose Warrior"
+              - FLAG Healer
               - FINISH
           '4':
             Trigger: /Caster/
               Script:
               - CHAT "Then you have made your choice. Please speak to Fenbar for more instruction.
-              - NARRATE "To choose Rogue type /hero choose Caster"
-              - PERMISS Heroes.choose.Caster
+              - EXECUTE ASSERVER 'hero admin class <player> Caster'
+              - NARRATE "To choose a class later, type /hero choose classname"
+              - NARRATE "An example would be /hero choose Healer"
+              - FLAG Caster
               - FINISH
           
   

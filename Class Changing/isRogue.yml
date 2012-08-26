@@ -1,0 +1,6 @@
+'isRogue':
+  Type: Trigger
+  Requirements:
+    Mode: All
+    List:
+    

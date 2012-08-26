@@ -1,4 +1,4 @@
-Deniziens:
+Denizens:
   'Monk Drea':
     Interact Scripts:
     - 0 A Warm Welcome
@@ -17,4 +17,7 @@ Deniziens:
   'Fenbar':
     Interact Scripts:
     - 10 Speak to Fenbar
+  'Nurse Jenna':
+    Interact Scripts:
+    - 10 Supplies for the Hospital
    
