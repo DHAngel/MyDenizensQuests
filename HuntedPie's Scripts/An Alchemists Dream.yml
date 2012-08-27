@@ -1,0 +1,47 @@
+"An Alchemists Dream":
+  Type: Interact
+  Requirements:
+    Mode: ALL
+    List:
+    - -FINISHED An Alchemists Dream
+  Steps:
+    1:
+      Click Trigger:
+        Script:
+        - CHAT "Hello My name is Johnathan. Many years ago, I was an aid to my uncle, the great Alchemist Van Peter. Want to hear about it?"
+        - HINT short
+        Chat Trigger:
+        1:
+          Trigger: /No/, Have A Nice Day.
+          Script:
+          - CHAT 'Yeah...You Too.'
+          - ^EMOTE "grumbles."
+          - FAIL
+        2:
+          Trigger: /Yes/ Please tell me about your past.
+          Script:
+          - CHAT "Well...if you insist."
+          - ^EMOTE "clears throat."
+          - CHAT "When I was a little boy I spent many hours helping my uncle to mix his potions late into the night. 
+          - CHAT "Such a terrible reek those potions made, But man did they pack a punch! "
+          - CHAT "Hey you know what, Im tired of helping! I too want to become a master of Alchemy. 
+          - CHAT "My dream has always been to become such a great Alchemist that one day I'd be able to turn all the world's iron into gol.. I mean heal all the worlds sick and ailing people." 
+          - CHAT "But to do that, I need my own help... and a lot of it!" 
+          - CHAT "Now that I've found someone as patient as you, I finally feel as if my dream might come true. 
+          - CHAT "If you help me, I promise to treat you better than Uncle treated me. The old geezer wouldnt even let me near his potions of speed."
+          - CHAT "Will you aid me in my quest become the world's greatest alchemist?"
+          - HINT short
+          1:
+            Trigger: /Yes/, Let's Get Started!
+            Script:
+            - CHAT "Excellent! You won't regret this decision at all. And remember, if you lose a finger or two while gathering ingredients, it's all for the greater good! 
+            - CHAT "Well, Let's get started indeed. Your first mission is as follows," 
+            - CHAT "Ive recently uncovered one of my Uncles old manuscripts that shows how to create a powerful potion that turns people into frogs." 
+            - CHAT "But alas, it requires 10 lilypads and 20 vines from the swampy homeland of the toads."
+            - CHAT "Get me these ingredients, and I'll give you a few potions of speed to make the journey worth your time."
+          '2':
+            Trigger: /No/, I need to think it over.
+            Script:
+            - CHAT "Thinking is good, but don't think too much. Just because I seem a little crazy and greedy, doesnt mean you can't trust me... or can you?"
+            - WAIT 10
+            - RESET

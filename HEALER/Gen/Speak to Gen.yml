@@ -21,7 +21,7 @@
         - CHAT "Our specilizations are Druid, Cleric, Bloodmage, and Disciple"
         - CHAT "Disciple is more of a battle healer than a healer like the others."
         - CHAT "Bloodmage uses their own Health to heal their allies."
-        - CHAT "I'd love to tell you move, but... you need to get going!"
+        - CHAT "I'd love to tell you more, but... you need to get going!"
         - NARRATE "You have spoken to Gen"
         - DISENGAGE
         - FINISH
