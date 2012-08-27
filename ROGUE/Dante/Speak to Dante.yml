@@ -10,7 +10,7 @@
       Click Trigger:
         Script:
         - ENGAGE
-        - EMOTE "A shady man is standing in the shadows"
+        - NARRATE "A shady man is standing in the shadows"
         - WHISPER "Hello..."
         - CHAT "I am Dante, the rogue instructor."
         - WAIT 1
@@ -21,7 +21,7 @@
         - CHAT "You don't even notice I have my blade at your side?"
         - WAIT 1
         - CHAT "That is what it's like to be a Rogue..."
-        - CHAT "Rogue like other paths have specilizations, Ninja, Ranger, Thief, and Bard.
+        - CHAT "Rogue like other paths have specializations, Ninja, Ranger, Thief, and Bard.
         - WAIT 1
         - CHAT "Ranger utilizes their bow much more than the other Rogues."
         - CHAT "The Bard sings songs and tales to boost their allies in combat."
@@ -36,4 +36,3 @@
         - NARRATE "You have spoken to Dante"
         - FINISH
         - DISENGAGE
-        

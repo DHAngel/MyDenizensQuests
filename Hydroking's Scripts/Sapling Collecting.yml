@@ -1,0 +1,65 @@
+
+'Collectsaplings':
+  Type: Trigger
+  Requirements:
+    Mode: ALL
+    List:
+    - -FINISHED saplingstarter
+  Steps:
+    '1':
+      Click Trigger:
+        Script:
+        - CHAT "Hello there, can you collect 20 saplings and bring them to me?  I will pay you handsomely."
+        - CHAT "Will you help me?"
+        - HINT short
+      Chat Trigger:
+        '1':
+          Trigger: /Yes/ I can do that.
+          Script:
+          - CHAT "Sweet bring me 5 of each sapling."
+          - FINISH
+        '2':
+          Trigger: /No/ you are on your own.
+          Script:
+          - CHAT "Ok thanks anyhow."
+          - FAIL
+
+'saplingcheckfail':
+  Type: Trigger
+  Requirements:
+    Mode: ALL
+    List:
+    - FINISHED saplingstarter
+    - -FINISHED saplingcheck
+    - -ITEM 06 5
+    - -ITEM 06:1 5
+    - -ITEM 06:2 5
+    - -ITEM 06:3 5
+  Steps:
+    '1':
+      Click Trigger:
+        Script:
+        - CHAT "When you have the saplings come back."
+
+'saplingcheck':
+  Type: Trigger   
+  Requirements:
+    Mode: ALL
+    List:
+    - FINISHED saplingstarter
+    - -FINISHED saplingcheck
+    - ITEM 295 20
+  Steps:
+    '1':
+      Click Trigger:
+        Script:
+        - ENGAGE
+        - TAKE 295 20
+        - TAKE 06:1 5
+        - TAKE 06:2 5
+        - TAKE 06:3 5
+        - CHAT "Ahh thank you my friend I appreciate the help.  Now here's your reward."
+        - GIVE HEROESEXP QTY:500
+        - GIVE 351:15 QTY:20
+        - FINISH
+        - DISENGAGE

@@ -30,6 +30,8 @@
         - LOOK RIGHT
         - EMOTE "Kisses his right bicep."
         - LOOK LEFT
+        - LOOK LEFT
+        - LOOK RIGHT
         - EMOTE "Kisses his left bicep."
         - WAIT 1
         - FINISH

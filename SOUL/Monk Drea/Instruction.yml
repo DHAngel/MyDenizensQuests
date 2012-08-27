@@ -30,7 +30,7 @@
           - CHAT "A Warrior eh, you like to swing swords?"
           - CHAT "You have chosen Warrior, please speak to Visco for training."
           - EXECUTE ASSERVER 'hero admin class <PLAYER> Warrior'
-          - FLAG Warrior
+          - FLAG Warrior:true
           - FINISH
           - DISENGAGE
         2:
@@ -41,7 +41,7 @@
           - CHAT "Speak to Dante for furthor instruction."
           - EXECUTE ASSERVER 'hero admin class <PLAYER> Rogue'
           - RESET FLAGGED PATH
-          - FLAG Rogue
+          - FLAG Rogue:true
           - FINISH
           - DISENGAGE
       
