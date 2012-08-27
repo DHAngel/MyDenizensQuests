@@ -26,7 +26,7 @@
         - CHAT "Dreadknights are the opposites of Paladins, they use powerful dark attacks to slay their enemy."
         - CHAT "Samurais are... well Samurais they are very powerful with their swords, but have less health"
         - WAIT 1
-        - CHAT "Dragoons are grasshoppers, they leap to catch their opponents and hit them many times with a shovel."
+        - CHAT "Dragoons are grasshoppers, they leap to catch their opponents and hit them many times with a spade."
         - LOOK RIGHT
         - EMOTE "Kisses his right bicep."
         - LOOK LEFT

@@ -4,6 +4,8 @@
     Mode: All
     List:
     - -FINISHED Warrior Accepted
+    - HEROESCLASS PRIMARY WARRIOR
+    - FINISHED Instruction
   Steps:
     1:
       Proximity Trigger:
@@ -19,3 +21,4 @@
         Script:
         - CHAT "You're first task is to help Guard Derick find his lost Brother."
         - CHAT "Go speak to him, he is at" #Whatever location he is at
+        - FINISH

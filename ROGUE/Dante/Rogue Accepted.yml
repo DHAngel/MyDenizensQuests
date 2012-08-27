@@ -4,7 +4,8 @@
     Mode: All
     List:
     - -FINISHED Rogue Accepted
-    - FLAGGED Rogue
+    - HEROESCLASS PRIMARY ROGUE
+    - FINISHED Instruction
   Steps:
     1:
       Proximity Trigger:
@@ -12,6 +13,7 @@
         - CHAT "Aahh, you followed my... advice?"
         - CHAT "Goood... Goood..."
         - NARRATE "To Speak with this NPC again, Right click him"
+        - ZAP DURATION:60
     2:
       Click Trigger:
         Script:
