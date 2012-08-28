@@ -1,0 +1,28 @@
+'TutCavern':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - HEROCLASS PRIMARY ROGUE
+    - FINISHED More Dead than Alive
+  Steps:
+    1:
+      Click Trigger:
+        Script:
+        - CHAT "Are you ready to leave?"
+        - HINT short
+      Chat Trigger:
+        1:
+          Trigger: /Yes/
+          Script:
+          - CHAT "Alright, you can now leave."
+          - SWITCH BOOKMARK:Leroy:GateLever
+          - WAIT 5
+          - SWITCH BOOKMARK:Leroy:GateLever
+          - ZAP 2
+        2:
+          Trigger: /No/
+          Script:
+          - CHAT "Alright, return to me when ready."
+          - ZAP 1
+      

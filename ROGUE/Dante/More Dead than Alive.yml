@@ -1,0 +1,36 @@
+'More Dead than Alive':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - HEROESCLASS PRIMARY ROGUE
+    - FINISHED Rogue Accepted
+    - -FINISHED More Dead than Alive
+  Steps:
+    1:
+      Click Trigger:
+        Script:
+        - CHAT "Eh, What do you want? The Caverns are off-limits."
+        - HINT
+      Chat Trigger:
+        1:
+          Trigger: /Dante Sent me to help you/.
+          Script:
+          - ^ENGAGE
+          - CHAT "Ahh, you must be a Rogue? Alright, I'll open the gate for you."
+          - WALKTO BOOKMARK:Leroy:GateSwitch
+          - ^SWITCH BOOKMARK:Leroy:GateLever
+          - RETURN
+          - CHAT "It's open, you may enter."
+          - CHAT "When you collect 5 Bones and 3 Zombie Flesh, return to me, that's all you need to do."
+          - CHAT "The Gate Guard will let you in and out when you need to."
+          - WAIT 5
+          - SWITCH BOOKMARK:Leroy:GateLever
+          - FINISH
+          - DISENGAGE
+        2:
+          Trigger: /Nothing/
+          Scipt:
+          - ENGAGE
+          - CHAT "Then leave."
+          - ZAP 1

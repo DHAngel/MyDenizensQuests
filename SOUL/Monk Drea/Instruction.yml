@@ -37,7 +37,6 @@
           - CHAT "I didn't take you for the sneaky type..."
           - CHAT "Speak to Dante for furthor instruction."
           - EXECUTE ASSERVER 'hero admin class <PLAYER> Rogue'
-          - RESET FLAGGED PATH
           - FINISH
           - DISENGAGE
       

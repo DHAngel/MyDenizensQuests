@@ -1,0 +1,19 @@
+'Collecting The Dead':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - ITEM BONE 5
+    - ITEM 367 3 #Rotten Flesh
+    - HEROESCLASS PRIMARY ROGUE
+    - FINISHED More Dead than Alive
+  Steps:
+    1:
+      Click Trigger:
+        Script:
+        - CHAT "Ahh, thank you for clearing the cavern out."
+        - CHAT "Here's your reward."
+        - GIVE MONEY QTY:50
+        - GIVE HEROESEXP QTY: 200
+        - CHAT "You should go speak to Dante again, he may have something for you."
+        - FINISH

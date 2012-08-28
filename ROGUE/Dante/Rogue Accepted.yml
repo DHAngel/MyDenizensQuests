@@ -17,7 +17,7 @@
     2:
       Click Trigger:
         Script:
-        - CHAT "Why don't you go help Guard Derick find his Brother?"
+        - CHAT "Why don't you talk to Leroy, he guards the caverns."
         - CHAT "I'll attend to... other, matters while your away."
         - FINISH
       
